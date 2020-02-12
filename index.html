@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Krug </title>
+
+<style>
+
+    body{
+        background-color:  #050210;
+        
+    }
+
+    
+
+
+
+@keyframes boja {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    
+  
+
+
+
+    .spolja{
+       
+
+        
+        
+        animation-name: boja;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+
+        background: linear-gradient(to top right,
+        #fb5dad, #55fb9f, #b97aff);
+
+
+        position: absolute;
+        
+        border-radius: 50%;
+        width: 340px;
+        height: 340px;
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        translate: 50% 50%;
+        transform-origin: 50% 50% 0;
+
+
+   
+    }
+
+.spolja::after{
+    
+    
+
+
+position: absolute;
+
+    margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        
+      
+}
+
+    .spolja::after{
+        content: '';
+       
+
+        position: absolute;
+        
+        background-color: #050210;
+
+        border-radius: 50%;
+        width: 285px;
+        height: 285px;
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        translate: 50% 50%;
+        transform-origin: 50% 50% 0;
+    }
+
+
+    .puls
+    { 
+        position: absolute;
+
+        background-color: #050210;
+
+        animation-name: puls;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+
+        border-radius: 50%;
+        width: 285px;
+        height: 285px;
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        translate: 50% 50%;
+        transform-origin: 50% 50% 0;
+
+    }
+
+@keyframes puls {
+
+    0%{ transform: scale(0);
+    filter: invert(15%)
+    
+
+
+
+        
+    }
+    100%{transform: scale(1);
+    filter: invert(0)
+    }
+    
+    
+}
+
+
+.blur{
+    content: '';
+
+    filter: blur(80px);
+
+    background: linear-gradient(to top right,
+    #fb5dad, #55fb9f, #b97aff );
+
+   
+         position: absolute;
+
+    
+
+        border-radius: 50%;
+        width: auto;
+        height: auto;
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+        translate: 50% 50%;
+        transform-origin: 50% 50% 0;
+
+}
+
+</style>
+
+
+</head>
+
+<body>
+    
+    
+
+    <div class="spolja">
+        
+    <div class="blur">
+       
+    </div>
+
+
+
+    </div>
+
+   
+
+        <div class="puls"></div>
+
+    </div>
+
+   
+
+
+</body>
+
+
+</html>
